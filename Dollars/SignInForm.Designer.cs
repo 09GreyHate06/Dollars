@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
-            this.panelMenu = new System.Windows.Forms.Panel();
+            this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,24 +36,24 @@
             this.tbPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnHideShowPass = new Guna.UI2.WinForms.Guna2Button();
-            this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelMenu
+            // pnlMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.Black;
-            this.panelMenu.Controls.Add(this.btnMinimize);
-            this.panelMenu.Controls.Add(this.btnExit);
-            this.panelMenu.Controls.Add(this.label3);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(420, 25);
-            this.panelMenu.TabIndex = 0;
+            this.pnlMenu.BackColor = System.Drawing.Color.Black;
+            this.pnlMenu.Controls.Add(this.btnMinimize);
+            this.pnlMenu.Controls.Add(this.btnExit);
+            this.pnlMenu.Controls.Add(this.label3);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(420, 25);
+            this.pnlMenu.TabIndex = 0;
             // 
             // btnMinimize
             // 
@@ -74,6 +73,7 @@
             this.btnMinimize.TabIndex = 17;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Text = "_";
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnExit
             // 
@@ -93,6 +93,7 @@
             this.btnExit.TabIndex = 16;
             this.btnExit.TabStop = false;
             this.btnExit.Text = "X";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label3
             // 
@@ -171,13 +172,16 @@
             this.btnSignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSignIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSignIn.FillColor = System.Drawing.Color.White;
+            this.btnSignIn.FocusedColor = System.Drawing.Color.Black;
             this.btnSignIn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.ForeColor = System.Drawing.Color.Black;
+            this.btnSignIn.IndicateFocus = true;
             this.btnSignIn.Location = new System.Drawing.Point(140, 409);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(140, 35);
             this.btnSignIn.TabIndex = 8;
             this.btnSignIn.Text = "Sign In";
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // btnSignUp
             // 
@@ -189,32 +193,22 @@
             this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSignUp.FillColor = System.Drawing.Color.White;
+            this.btnSignUp.FocusedColor = System.Drawing.Color.Black;
             this.btnSignUp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.btnSignUp.IndicateFocus = true;
             this.btnSignUp.Location = new System.Drawing.Point(140, 450);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(140, 35);
             this.btnSignUp.TabIndex = 9;
             this.btnSignUp.Text = "Sign Up";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(85, 59);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 11;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnHideShowPass
             // 
             this.btnHideShowPass.Animated = true;
             this.btnHideShowPass.AutoRoundedCorners = true;
-            this.btnHideShowPass.BackColor = System.Drawing.Color.Transparent;
+            this.btnHideShowPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnHideShowPass.BorderRadius = 9;
             this.btnHideShowPass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHideShowPass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -224,12 +218,23 @@
             this.btnHideShowPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHideShowPass.ForeColor = System.Drawing.Color.White;
             this.btnHideShowPass.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnHideShowPass.Location = new System.Drawing.Point(341, 365);
+            this.btnHideShowPass.Location = new System.Drawing.Point(307, 365);
             this.btnHideShowPass.Name = "btnHideShowPass";
             this.btnHideShowPass.Size = new System.Drawing.Size(20, 20);
-            this.btnHideShowPass.TabIndex = 65;
+            this.btnHideShowPass.TabIndex = 88;
             this.btnHideShowPass.TabStop = false;
             this.btnHideShowPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHideShowPass.Click += new System.EventHandler(this.btnHideShowPass_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Dollars.ImageRes.dollars;
+            this.pictureBox1.Location = new System.Drawing.Point(85, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 66;
+            this.pictureBox1.TabStop = false;
             // 
             // SignInForm
             // 
@@ -237,34 +242,35 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(420, 512);
             this.Controls.Add(this.btnHideShowPass);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUsername);
-            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.pnlMenu);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dollars";
-            this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox tbUsername;
         private Guna.UI2.WinForms.Guna2TextBox tbPassword;
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnMinimize;
         private Guna.UI2.WinForms.Guna2Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnHideShowPass;
     }
 }

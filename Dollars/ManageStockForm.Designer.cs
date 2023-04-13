@@ -28,43 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageStockForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.tbSearchPrd = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbQuantity = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbPrdID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dpStockInDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.tbPrdName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dpStockInDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.tbPrdID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbQuantity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbSearchPrd = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvPrd = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvProductCoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProductColName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProductColQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAddStock = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSaveStockIn = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteSelectedAddStock = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClearStockIn = new Guna.UI2.WinForms.Guna2Button();
             this.dgvStockInHistory = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvStockInID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStockInPrdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStockInPrdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStockInQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStockInDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvStockInDeleteBtn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrd)).BeginInit();
@@ -118,37 +114,10 @@
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // tbSearchPrd
-            // 
-            this.tbSearchPrd.Animated = true;
-            this.tbSearchPrd.AutoRoundedCorners = true;
-            this.tbSearchPrd.BorderRadius = 11;
-            this.tbSearchPrd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbSearchPrd.DefaultText = "";
-            this.tbSearchPrd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbSearchPrd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbSearchPrd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbSearchPrd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbSearchPrd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.tbSearchPrd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbSearchPrd.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearchPrd.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbSearchPrd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbSearchPrd.IconLeft = ((System.Drawing.Image)(resources.GetObject("tbSearchPrd.IconLeft")));
-            this.tbSearchPrd.IconLeftSize = new System.Drawing.Size(15, 15);
-            this.tbSearchPrd.Location = new System.Drawing.Point(113, 25);
-            this.tbSearchPrd.Name = "tbSearchPrd";
-            this.tbSearchPrd.PasswordChar = '\0';
-            this.tbSearchPrd.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbSearchPrd.PlaceholderText = "Type here...";
-            this.tbSearchPrd.SelectedText = "";
-            this.tbSearchPrd.Size = new System.Drawing.Size(299, 24);
-            this.tbSearchPrd.TabIndex = 9;
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.label2.Location = new System.Drawing.Point(32, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 24);
@@ -177,92 +146,48 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "STOCK INFORMATION";
             // 
-            // tbQuantity
+            // dpStockInDate
             // 
-            this.tbQuantity.Animated = true;
-            this.tbQuantity.AutoRoundedCorners = true;
-            this.tbQuantity.BorderRadius = 11;
-            this.tbQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbQuantity.DefaultText = "";
-            this.tbQuantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbQuantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbQuantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbQuantity.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.tbQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbQuantity.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbQuantity.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbQuantity.Location = new System.Drawing.Point(113, 55);
-            this.tbQuantity.Name = "tbQuantity";
-            this.tbQuantity.PasswordChar = '\0';
-            this.tbQuantity.PlaceholderText = "";
-            this.tbQuantity.SelectedText = "";
-            this.tbQuantity.Size = new System.Drawing.Size(299, 24);
-            this.tbQuantity.TabIndex = 40;
-            this.tbQuantity.TextOffset = new System.Drawing.Point(5, 0);
-            this.tbQuantity.TextChanged += new System.EventHandler(this.tbQuantity_TextChanged);
+            this.dpStockInDate.Animated = true;
+            this.dpStockInDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.dpStockInDate.BorderRadius = 5;
+            this.dpStockInDate.BorderThickness = 1;
+            this.dpStockInDate.Checked = true;
+            this.dpStockInDate.CustomFormat = "";
+            this.dpStockInDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.dpStockInDate.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.dpStockInDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dpStockInDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dpStockInDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.dpStockInDate.Location = new System.Drawing.Point(739, 25);
+            this.dpStockInDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dpStockInDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dpStockInDate.Name = "dpStockInDate";
+            this.dpStockInDate.Size = new System.Drawing.Size(193, 24);
+            this.dpStockInDate.TabIndex = 84;
+            this.dpStockInDate.Value = new System.DateTime(2023, 4, 3, 0, 0, 0, 0);
             // 
-            // label5
+            // label8
             // 
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(32, 55);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 24);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Quantity:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbPrdID
-            // 
-            this.tbPrdID.Animated = true;
-            this.tbPrdID.AutoRoundedCorners = true;
-            this.tbPrdID.BorderRadius = 11;
-            this.tbPrdID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbPrdID.DefaultText = "";
-            this.tbPrdID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbPrdID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbPrdID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPrdID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPrdID.Enabled = false;
-            this.tbPrdID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.tbPrdID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbPrdID.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPrdID.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbPrdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbPrdID.Location = new System.Drawing.Point(518, 25);
-            this.tbPrdID.Name = "tbPrdID";
-            this.tbPrdID.PasswordChar = '\0';
-            this.tbPrdID.PlaceholderText = "";
-            this.tbPrdID.ReadOnly = true;
-            this.tbPrdID.SelectedText = "";
-            this.tbPrdID.Size = new System.Drawing.Size(110, 24);
-            this.tbPrdID.TabIndex = 42;
-            this.tbPrdID.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(437, 25);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 24);
-            this.label6.TabIndex = 41;
-            this.label6.Text = "Product ID:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label8.Location = new System.Drawing.Point(642, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 24);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "Stock in Date:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbPrdName
             // 
             this.tbPrdName.Animated = true;
-            this.tbPrdName.AutoRoundedCorners = true;
-            this.tbPrdName.BorderRadius = 11;
+            this.tbPrdName.BorderRadius = 5;
             this.tbPrdName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPrdName.DefaultText = "";
             this.tbPrdName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbPrdName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbPrdName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPrdName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPrdName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbPrdName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.tbPrdName.Enabled = false;
             this.tbPrdName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.tbPrdName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
@@ -282,7 +207,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.label7.Location = new System.Drawing.Point(437, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 24);
@@ -290,68 +215,131 @@
             this.label7.Text = "Name:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // tbPrdID
             // 
-            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(642, 25);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 24);
-            this.label8.TabIndex = 45;
-            this.label8.Text = "Stock in Date:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tbPrdID.Animated = true;
+            this.tbPrdID.BorderRadius = 5;
+            this.tbPrdID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPrdID.DefaultText = "";
+            this.tbPrdID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPrdID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPrdID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbPrdID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbPrdID.Enabled = false;
+            this.tbPrdID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.tbPrdID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbPrdID.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPrdID.ForeColor = System.Drawing.Color.Gainsboro;
+            this.tbPrdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbPrdID.Location = new System.Drawing.Point(518, 25);
+            this.tbPrdID.Name = "tbPrdID";
+            this.tbPrdID.PasswordChar = '\0';
+            this.tbPrdID.PlaceholderText = "";
+            this.tbPrdID.ReadOnly = true;
+            this.tbPrdID.SelectedText = "";
+            this.tbPrdID.Size = new System.Drawing.Size(110, 24);
+            this.tbPrdID.TabIndex = 42;
+            this.tbPrdID.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // dpStockInDate
+            // label6
             // 
-            this.dpStockInDate.Animated = true;
-            this.dpStockInDate.AutoRoundedCorners = true;
-            this.dpStockInDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.dpStockInDate.BorderRadius = 11;
-            this.dpStockInDate.BorderThickness = 1;
-            this.dpStockInDate.Checked = true;
-            this.dpStockInDate.CustomFormat = "";
-            this.dpStockInDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.dpStockInDate.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.dpStockInDate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.dpStockInDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dpStockInDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.dpStockInDate.Location = new System.Drawing.Point(739, 25);
-            this.dpStockInDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dpStockInDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dpStockInDate.Name = "dpStockInDate";
-            this.dpStockInDate.Size = new System.Drawing.Size(193, 24);
-            this.dpStockInDate.TabIndex = 84;
-            this.dpStockInDate.Value = new System.DateTime(2023, 4, 3, 0, 0, 0, 0);
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label6.Location = new System.Drawing.Point(437, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 24);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Product ID:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbQuantity
+            // 
+            this.tbQuantity.Animated = true;
+            this.tbQuantity.BorderRadius = 5;
+            this.tbQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbQuantity.DefaultText = "";
+            this.tbQuantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbQuantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbQuantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbQuantity.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.tbQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbQuantity.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbQuantity.ForeColor = System.Drawing.Color.Gainsboro;
+            this.tbQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbQuantity.Location = new System.Drawing.Point(113, 55);
+            this.tbQuantity.Name = "tbQuantity";
+            this.tbQuantity.PasswordChar = '\0';
+            this.tbQuantity.PlaceholderText = "";
+            this.tbQuantity.SelectedText = "";
+            this.tbQuantity.Size = new System.Drawing.Size(299, 24);
+            this.tbQuantity.TabIndex = 40;
+            this.tbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbQuantity.TextOffset = new System.Drawing.Point(5, 0);
+            this.tbQuantity.TextChanged += new System.EventHandler(this.tbQuantity_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label5.Location = new System.Drawing.Point(32, 55);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 24);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Quantity:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbSearchPrd
+            // 
+            this.tbSearchPrd.Animated = true;
+            this.tbSearchPrd.BorderRadius = 5;
+            this.tbSearchPrd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbSearchPrd.DefaultText = "";
+            this.tbSearchPrd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbSearchPrd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbSearchPrd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbSearchPrd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbSearchPrd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.tbSearchPrd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbSearchPrd.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearchPrd.ForeColor = System.Drawing.Color.Gainsboro;
+            this.tbSearchPrd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbSearchPrd.IconLeft = global::Dollars.ImageRes.search;
+            this.tbSearchPrd.IconLeftSize = new System.Drawing.Size(15, 15);
+            this.tbSearchPrd.Location = new System.Drawing.Point(113, 25);
+            this.tbSearchPrd.Name = "tbSearchPrd";
+            this.tbSearchPrd.PasswordChar = '\0';
+            this.tbSearchPrd.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.tbSearchPrd.PlaceholderText = "Type here...";
+            this.tbSearchPrd.SelectedText = "";
+            this.tbSearchPrd.Size = new System.Drawing.Size(299, 24);
+            this.tbSearchPrd.TabIndex = 9;
+            this.tbSearchPrd.TextChanged += new System.EventHandler(this.OnSearchProduct);
             // 
             // dgvPrd
             // 
             this.dgvPrd.AllowUserToAddRows = false;
             this.dgvPrd.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgvPrd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgvPrd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgvPrd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPrd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None;
             this.dgvPrd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvPrd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvProductCoID,
-            this.dgvProductColName,
-            this.dgvProductColQuantity});
-            this.dgvPrd.DataMember = " ";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPrd.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPrd.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPrd.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.dgvPrd.Location = new System.Drawing.Point(12, 149);
             this.dgvPrd.Name = "dgvPrd";
@@ -377,30 +365,11 @@
             this.dgvPrd.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.dgvPrd.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvPrd.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPrd.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvPrd.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
             this.dgvPrd.ThemeStyle.RowsStyle.Height = 22;
             this.dgvPrd.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvPrd.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            // 
-            // dgvProductCoID
-            // 
-            this.dgvProductCoID.FillWeight = 15F;
-            this.dgvProductCoID.HeaderText = "ID";
-            this.dgvProductCoID.Name = "dgvProductCoID";
-            this.dgvProductCoID.ReadOnly = true;
-            // 
-            // dgvProductColName
-            // 
-            this.dgvProductColName.HeaderText = "Name";
-            this.dgvProductColName.Name = "dgvProductColName";
-            this.dgvProductColName.ReadOnly = true;
-            // 
-            // dgvProductColQuantity
-            // 
-            this.dgvProductColQuantity.FillWeight = 25F;
-            this.dgvProductColQuantity.HeaderText = "Quantity";
-            this.dgvProductColQuantity.Name = "dgvProductColQuantity";
-            this.dgvProductColQuantity.ReadOnly = true;
+            this.dgvPrd.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrd_CellClick);
             // 
             // panel2
             // 
@@ -422,13 +391,16 @@
             this.btnAddStock.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddStock.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddStock.FillColor = System.Drawing.Color.White;
+            this.btnAddStock.FocusedColor = System.Drawing.Color.Black;
             this.btnAddStock.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStock.ForeColor = System.Drawing.Color.Black;
+            this.btnAddStock.IndicateFocus = true;
             this.btnAddStock.Location = new System.Drawing.Point(0, 0);
             this.btnAddStock.Name = "btnAddStock";
             this.btnAddStock.Size = new System.Drawing.Size(140, 35);
             this.btnAddStock.TabIndex = 69;
             this.btnAddStock.Text = "Add Stock";
+            this.btnAddStock.Click += new System.EventHandler(this.btnAddStock_Click);
             // 
             // btnCancel
             // 
@@ -440,18 +412,21 @@
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCancel.FillColor = System.Drawing.Color.White;
+            this.btnCancel.FocusedColor = System.Drawing.Color.Black;
             this.btnCancel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.btnCancel.IndicateFocus = true;
             this.btnCancel.Location = new System.Drawing.Point(152, 0);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(140, 35);
             this.btnCancel.TabIndex = 70;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnSaveStockIn);
-            this.panel3.Controls.Add(this.btnDeleteSelectedAddStock);
+            this.panel3.Controls.Add(this.btnClearStockIn);
             this.panel3.Location = new System.Drawing.Point(696, 532);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(292, 35);
@@ -468,63 +443,67 @@
             this.btnSaveStockIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSaveStockIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSaveStockIn.FillColor = System.Drawing.Color.White;
+            this.btnSaveStockIn.FocusedColor = System.Drawing.Color.Black;
             this.btnSaveStockIn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveStockIn.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveStockIn.IndicateFocus = true;
             this.btnSaveStockIn.Location = new System.Drawing.Point(0, 0);
             this.btnSaveStockIn.Name = "btnSaveStockIn";
             this.btnSaveStockIn.Size = new System.Drawing.Size(140, 35);
             this.btnSaveStockIn.TabIndex = 69;
             this.btnSaveStockIn.Text = "Save";
+            this.btnSaveStockIn.Click += new System.EventHandler(this.btnSaveStockIn_Click);
             // 
-            // btnDeleteSelectedAddStock
+            // btnClearStockIn
             // 
-            this.btnDeleteSelectedAddStock.Animated = true;
-            this.btnDeleteSelectedAddStock.AutoRoundedCorners = true;
-            this.btnDeleteSelectedAddStock.BorderRadius = 16;
-            this.btnDeleteSelectedAddStock.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteSelectedAddStock.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteSelectedAddStock.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteSelectedAddStock.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteSelectedAddStock.FillColor = System.Drawing.Color.White;
-            this.btnDeleteSelectedAddStock.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteSelectedAddStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnDeleteSelectedAddStock.Location = new System.Drawing.Point(152, 0);
-            this.btnDeleteSelectedAddStock.Name = "btnDeleteSelectedAddStock";
-            this.btnDeleteSelectedAddStock.Size = new System.Drawing.Size(140, 35);
-            this.btnDeleteSelectedAddStock.TabIndex = 70;
-            this.btnDeleteSelectedAddStock.Text = "Delete";
+            this.btnClearStockIn.Animated = true;
+            this.btnClearStockIn.AutoRoundedCorners = true;
+            this.btnClearStockIn.BorderRadius = 16;
+            this.btnClearStockIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClearStockIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClearStockIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClearStockIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClearStockIn.FillColor = System.Drawing.Color.White;
+            this.btnClearStockIn.FocusedColor = System.Drawing.Color.Black;
+            this.btnClearStockIn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearStockIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.btnClearStockIn.IndicateFocus = true;
+            this.btnClearStockIn.Location = new System.Drawing.Point(152, 0);
+            this.btnClearStockIn.Name = "btnClearStockIn";
+            this.btnClearStockIn.Size = new System.Drawing.Size(140, 35);
+            this.btnClearStockIn.TabIndex = 70;
+            this.btnClearStockIn.Text = "Clear";
+            this.btnClearStockIn.Click += new System.EventHandler(this.btnClearStockIn_Click);
             // 
             // dgvStockInHistory
             // 
             this.dgvStockInHistory.AllowUserToAddRows = false;
             this.dgvStockInHistory.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgvStockInHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgvStockInHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgvStockInHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvStockInHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockInHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockInHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvStockInHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvStockInID,
             this.dgvStockInPrdID,
             this.dgvStockInPrdName,
             this.dgvStockInQuantity,
-            this.dgvStockInDate});
-            this.dgvStockInHistory.DataMember = " ";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStockInHistory.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvStockInDate,
+            this.dgvStockInDeleteBtn});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStockInHistory.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvStockInHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.dgvStockInHistory.Location = new System.Drawing.Point(452, 149);
             this.dgvStockInHistory.Name = "dgvStockInHistory";
@@ -550,17 +529,11 @@
             this.dgvStockInHistory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.dgvStockInHistory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStockInHistory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvStockInHistory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvStockInHistory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
             this.dgvStockInHistory.ThemeStyle.RowsStyle.Height = 22;
             this.dgvStockInHistory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvStockInHistory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            // 
-            // dgvStockInID
-            // 
-            this.dgvStockInID.FillWeight = 20F;
-            this.dgvStockInID.HeaderText = "ID";
-            this.dgvStockInID.Name = "dgvStockInID";
-            this.dgvStockInID.ReadOnly = true;
+            this.dgvStockInHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockInHistory_CellContentClick);
             // 
             // dgvStockInPrdID
             // 
@@ -588,6 +561,15 @@
             this.dgvStockInDate.Name = "dgvStockInDate";
             this.dgvStockInDate.ReadOnly = true;
             // 
+            // dgvStockInDeleteBtn
+            // 
+            this.dgvStockInDeleteBtn.FillWeight = 30F;
+            this.dgvStockInDeleteBtn.HeaderText = "";
+            this.dgvStockInDeleteBtn.Name = "dgvStockInDeleteBtn";
+            this.dgvStockInDeleteBtn.ReadOnly = true;
+            this.dgvStockInDeleteBtn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockInDeleteBtn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // ManageStockForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -599,13 +581,15 @@
             this.Controls.Add(this.dgvPrd);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ManageStockForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ManageStockForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ManageStockForm_FormClosing);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrd)).EndInit();
@@ -633,20 +617,17 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2DateTimePicker dpStockInDate;
         private Guna.UI2.WinForms.Guna2DataGridView dgvPrd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProductCoID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProductColName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProductColQuantity;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnAddStock;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button btnSaveStockIn;
-        private Guna.UI2.WinForms.Guna2Button btnDeleteSelectedAddStock;
+        private Guna.UI2.WinForms.Guna2Button btnClearStockIn;
         private Guna.UI2.WinForms.Guna2DataGridView dgvStockInHistory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvStockInID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStockInPrdID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStockInPrdName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStockInQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStockInDate;
+        private System.Windows.Forms.DataGridViewButtonColumn dgvStockInDeleteBtn;
     }
 }

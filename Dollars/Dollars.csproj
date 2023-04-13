@@ -52,6 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="Cart.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="Discount.cs" />
+    <Compile Include="EnableDiscountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnableDiscountForm.Designer.cs">
+      <DependentUpon>EnableDiscountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterQuantityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterQuantityForm.Designer.cs">
+      <DependentUpon>EnterQuantityForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="IChildForm.cs" />
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
@@ -71,11 +88,11 @@
     <Compile Include="ManageCustomerForm.Designer.cs">
       <DependentUpon>ManageCustomerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagePricelistForm.cs">
+    <Compile Include="ManageDiscountForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagePricelistForm.Designer.cs">
-      <DependentUpon>ManagePricelistForm.cs</DependentUpon>
+    <Compile Include="ManageDiscountForm.Designer.cs">
+      <DependentUpon>ManageDiscountForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageProductForm.cs">
       <SubType>Form</SubType>
@@ -94,6 +111,49 @@
     </Compile>
     <Compile Include="ManageStockForm.Designer.cs">
       <DependentUpon>ManageStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSForm.Designer.cs">
+      <DependentUpon>POSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductBtnUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductBtnUC.Designer.cs">
+      <DependentUpon>ProductBtnUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs" />
+    <Compile Include="ProductInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductInfoForm.Designer.cs">
+      <DependentUpon>ProductInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCustomerForm.Designer.cs">
+      <DependentUpon>SearchCustomerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SearchProductForm.cs">
       <SubType>Form</SubType>
@@ -115,6 +175,34 @@
     <Compile Include="SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StockInInfo.cs" />
+    <Compile Include="StoreInfo.cs" />
+    <Compile Include="ManageStoreInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStoreInfoForm.Designer.cs">
+      <DependentUpon>ManageStoreInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="UseCustomerPointsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseCustomerPointsForm.Designer.cs">
+      <DependentUpon>UseCustomerPointsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="EnableDiscountForm.resx">
+      <DependentUpon>EnableDiscountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterQuantityForm.resx">
+      <DependentUpon>EnterQuantityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,8 +212,8 @@
     <EmbeddedResource Include="ManageCustomerForm.resx">
       <DependentUpon>ManageCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagePricelistForm.resx">
-      <DependentUpon>ManagePricelistForm.cs</DependentUpon>
+    <EmbeddedResource Include="ManageDiscountForm.resx">
+      <DependentUpon>ManageDiscountForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageProductForm.resx">
       <DependentUpon>ManageProductForm.cs</DependentUpon>
@@ -135,6 +223,28 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageStockForm.resx">
       <DependentUpon>ManageStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSForm.resx">
+      <DependentUpon>POSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductBtnUC.resx">
+      <DependentUpon>ProductBtnUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductInfoForm.resx">
+      <DependentUpon>ProductInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCustomerForm.resx">
+      <DependentUpon>SearchCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchProductForm.resx">
       <DependentUpon>SearchProductForm.cs</DependentUpon>
@@ -154,6 +264,15 @@
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageStoreInfoForm.resx">
+      <DependentUpon>ManageStoreInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseCustomerPointsForm.resx">
+      <DependentUpon>UseCustomerPointsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -167,6 +286,99 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decreasew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cartw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolsw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\total sales w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transactionw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boxesw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollars_word_only.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_cart_w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discountw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flagw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\validate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoicew.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

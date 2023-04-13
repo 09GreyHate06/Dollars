@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageCustomerForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tbCustomerEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tbCustomerContactNo = new Guna.UI2.WinForms.Guna2TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.tbCustomerAmountSpent = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dpBirthdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbCustomerAmountSpent = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tbCustomerPoints = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tbCustomerEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tbCustomerContactNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.tbCustomerMiddleIn = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.tbCustomerFirstName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.tbCustomerLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.tbCustomerID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -59,100 +61,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnPoints = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvColumnAmountSpent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tbCustomerEmail
-            // 
-            this.tbCustomerEmail.Animated = true;
-            this.tbCustomerEmail.AutoRoundedCorners = true;
-            this.tbCustomerEmail.BorderRadius = 11;
-            this.tbCustomerEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCustomerEmail.DefaultText = "";
-            this.tbCustomerEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbCustomerEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbCustomerEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCustomerEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCustomerEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.tbCustomerEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCustomerEmail.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbCustomerEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerEmail.Location = new System.Drawing.Point(114, 185);
-            this.tbCustomerEmail.Name = "tbCustomerEmail";
-            this.tbCustomerEmail.PasswordChar = '\0';
-            this.tbCustomerEmail.PlaceholderText = "";
-            this.tbCustomerEmail.SelectedText = "";
-            this.tbCustomerEmail.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerEmail.TabIndex = 50;
-            this.tbCustomerEmail.TextOffset = new System.Drawing.Point(5, 0);
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(14, 185);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 24);
-            this.label10.TabIndex = 49;
-            this.label10.Text = "Email:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbCustomerContactNo
-            // 
-            this.tbCustomerContactNo.Animated = true;
-            this.tbCustomerContactNo.AutoRoundedCorners = true;
-            this.tbCustomerContactNo.BorderRadius = 11;
-            this.tbCustomerContactNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCustomerContactNo.DefaultText = "";
-            this.tbCustomerContactNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbCustomerContactNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbCustomerContactNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCustomerContactNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCustomerContactNo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.tbCustomerContactNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerContactNo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCustomerContactNo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.tbCustomerContactNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerContactNo.Location = new System.Drawing.Point(114, 155);
-            this.tbCustomerContactNo.Name = "tbCustomerContactNo";
-            this.tbCustomerContactNo.PasswordChar = '\0';
-            this.tbCustomerContactNo.PlaceholderText = "";
-            this.tbCustomerContactNo.SelectedText = "";
-            this.tbCustomerContactNo.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerContactNo.TabIndex = 48;
-            this.tbCustomerContactNo.TextOffset = new System.Drawing.Point(5, 0);
-            this.tbCustomerContactNo.TextChanged += new System.EventHandler(this.tbCustomerContactNo_TextChanged);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Controls.Add(this.tbCustomerAmountSpent);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.tbCustomerPoints);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.tbCustomerEmail);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.tbCustomerContactNo);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.tbCustomerMiddleIn);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.tbCustomerFirstName);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.tbCustomerLastName);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.tbCustomerID);
-            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.groupBox2.Location = new System.Drawing.Point(626, 129);
@@ -169,7 +89,7 @@
             this.panel2.Location = new System.Drawing.Point(35, 403);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(292, 35);
-            this.panel2.TabIndex = 72;
+            this.panel2.TabIndex = 73;
             // 
             // btnSave
             // 
@@ -182,13 +102,16 @@
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSave.FillColor = System.Drawing.Color.White;
+            this.btnSave.FocusedColor = System.Drawing.Color.Black;
             this.btnSave.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.IndicateFocus = true;
             this.btnSave.Location = new System.Drawing.Point(0, 0);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(140, 35);
             this.btnSave.TabIndex = 69;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -200,19 +123,79 @@
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.FillColor = System.Drawing.Color.White;
+            this.btnDelete.FocusedColor = System.Drawing.Color.Black;
             this.btnDelete.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.btnDelete.IndicateFocus = true;
             this.btnDelete.Location = new System.Drawing.Point(152, 0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(140, 35);
             this.btnDelete.TabIndex = 70;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dpBirthdate);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.tbCustomerAmountSpent);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.tbCustomerPoints);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.tbCustomerEmail);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.tbCustomerContactNo);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.tbCustomerMiddleIn);
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.tbCustomerFirstName);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.tbCustomerLastName);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.tbCustomerID);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Location = new System.Drawing.Point(19, 35);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(324, 290);
+            this.panel3.TabIndex = 20;
+            // 
+            // dpBirthdate
+            // 
+            this.dpBirthdate.Animated = true;
+            this.dpBirthdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.dpBirthdate.BorderRadius = 5;
+            this.dpBirthdate.BorderThickness = 1;
+            this.dpBirthdate.Checked = true;
+            this.dpBirthdate.CustomFormat = "";
+            this.dpBirthdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.dpBirthdate.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.dpBirthdate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.dpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dpBirthdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.dpBirthdate.Location = new System.Drawing.Point(102, 123);
+            this.dpBirthdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dpBirthdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dpBirthdate.Name = "dpBirthdate";
+            this.dpBirthdate.Size = new System.Drawing.Size(219, 24);
+            this.dpBirthdate.TabIndex = 75;
+            this.dpBirthdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dpBirthdate.Value = new System.DateTime(2000, 4, 6, 0, 0, 0, 0);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label3.Location = new System.Drawing.Point(2, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 24);
+            this.label3.TabIndex = 83;
+            this.label3.Text = "Birthdate:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbCustomerAmountSpent
             // 
             this.tbCustomerAmountSpent.Animated = true;
-            this.tbCustomerAmountSpent.AutoRoundedCorners = true;
-            this.tbCustomerAmountSpent.BorderRadius = 11;
+            this.tbCustomerAmountSpent.BorderRadius = 5;
             this.tbCustomerAmountSpent.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCustomerAmountSpent.DefaultText = "";
             this.tbCustomerAmountSpent.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -224,33 +207,33 @@
             this.tbCustomerAmountSpent.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCustomerAmountSpent.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbCustomerAmountSpent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerAmountSpent.Location = new System.Drawing.Point(114, 245);
+            this.tbCustomerAmountSpent.Location = new System.Drawing.Point(102, 243);
             this.tbCustomerAmountSpent.Name = "tbCustomerAmountSpent";
             this.tbCustomerAmountSpent.PasswordChar = '\0';
-            this.tbCustomerAmountSpent.PlaceholderText = "";
+            this.tbCustomerAmountSpent.PlaceholderText = "0.00";
             this.tbCustomerAmountSpent.SelectedText = "";
             this.tbCustomerAmountSpent.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerAmountSpent.TabIndex = 66;
+            this.tbCustomerAmountSpent.TabIndex = 82;
+            this.tbCustomerAmountSpent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbCustomerAmountSpent.TextOffset = new System.Drawing.Point(5, 0);
-            this.tbCustomerAmountSpent.TextChanged += new System.EventHandler(this.tbCustomerAmountSpent_TextChanged);
-            this.tbCustomerAmountSpent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCustomerAmountSpent_KeyPress);
+            this.tbCustomerAmountSpent.TextChanged += new System.EventHandler(this.TBTextChangeFloatsOnly);
+            this.tbCustomerAmountSpent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBKeyPressReadDotOnce);
             // 
-            // label3
+            // label11
             // 
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(14, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 24);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "Amount Spent:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label11.Location = new System.Drawing.Point(2, 243);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 24);
+            this.label11.TabIndex = 81;
+            this.label11.Text = "Amount Spent:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbCustomerPoints
             // 
             this.tbCustomerPoints.Animated = true;
-            this.tbCustomerPoints.AutoRoundedCorners = true;
-            this.tbCustomerPoints.BorderRadius = 11;
+            this.tbCustomerPoints.BorderRadius = 5;
             this.tbCustomerPoints.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCustomerPoints.DefaultText = "";
             this.tbCustomerPoints.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -262,43 +245,104 @@
             this.tbCustomerPoints.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCustomerPoints.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbCustomerPoints.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerPoints.Location = new System.Drawing.Point(114, 215);
+            this.tbCustomerPoints.Location = new System.Drawing.Point(102, 213);
             this.tbCustomerPoints.Name = "tbCustomerPoints";
             this.tbCustomerPoints.PasswordChar = '\0';
-            this.tbCustomerPoints.PlaceholderText = "";
+            this.tbCustomerPoints.PlaceholderText = "0.00";
             this.tbCustomerPoints.SelectedText = "";
             this.tbCustomerPoints.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerPoints.TabIndex = 64;
+            this.tbCustomerPoints.TabIndex = 80;
+            this.tbCustomerPoints.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tbCustomerPoints.TextOffset = new System.Drawing.Point(5, 0);
-            this.tbCustomerPoints.TextChanged += new System.EventHandler(this.tbCustomerPoints_TextChanged);
+            this.tbCustomerPoints.TextChanged += new System.EventHandler(this.TBTextChangeFloatsOnly);
+            this.tbCustomerPoints.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBKeyPressReadDotOnce);
             // 
-            // label7
+            // label12
             // 
-            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(14, 215);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 24);
-            this.label7.TabIndex = 63;
-            this.label7.Text = "Points:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label12.Location = new System.Drawing.Point(2, 213);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 24);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "Points:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // tbCustomerEmail
             // 
-            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(14, 155);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 24);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "Contact No:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tbCustomerEmail.Animated = true;
+            this.tbCustomerEmail.BorderRadius = 5;
+            this.tbCustomerEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbCustomerEmail.DefaultText = "";
+            this.tbCustomerEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbCustomerEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbCustomerEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbCustomerEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbCustomerEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.tbCustomerEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbCustomerEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCustomerEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.tbCustomerEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbCustomerEmail.Location = new System.Drawing.Point(102, 183);
+            this.tbCustomerEmail.Name = "tbCustomerEmail";
+            this.tbCustomerEmail.PasswordChar = '\0';
+            this.tbCustomerEmail.PlaceholderText = "";
+            this.tbCustomerEmail.SelectedText = "";
+            this.tbCustomerEmail.Size = new System.Drawing.Size(219, 24);
+            this.tbCustomerEmail.TabIndex = 78;
+            this.tbCustomerEmail.TextOffset = new System.Drawing.Point(5, 0);
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label13.Location = new System.Drawing.Point(2, 183);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(94, 24);
+            this.label13.TabIndex = 77;
+            this.label13.Text = "Email:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbCustomerContactNo
+            // 
+            this.tbCustomerContactNo.Animated = true;
+            this.tbCustomerContactNo.BorderRadius = 5;
+            this.tbCustomerContactNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbCustomerContactNo.DefaultText = "";
+            this.tbCustomerContactNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbCustomerContactNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbCustomerContactNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbCustomerContactNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbCustomerContactNo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
+            this.tbCustomerContactNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbCustomerContactNo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCustomerContactNo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.tbCustomerContactNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.tbCustomerContactNo.Location = new System.Drawing.Point(102, 153);
+            this.tbCustomerContactNo.Name = "tbCustomerContactNo";
+            this.tbCustomerContactNo.PasswordChar = '\0';
+            this.tbCustomerContactNo.PlaceholderText = "";
+            this.tbCustomerContactNo.SelectedText = "";
+            this.tbCustomerContactNo.Size = new System.Drawing.Size(219, 24);
+            this.tbCustomerContactNo.TabIndex = 76;
+            this.tbCustomerContactNo.TextOffset = new System.Drawing.Point(5, 0);
+            this.tbCustomerContactNo.TextChanged += new System.EventHandler(this.TBTextChangeNumbersOnly);
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label14.Location = new System.Drawing.Point(2, 153);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(94, 24);
+            this.label14.TabIndex = 75;
+            this.label14.Text = "Contact No:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbCustomerMiddleIn
             // 
             this.tbCustomerMiddleIn.Animated = true;
-            this.tbCustomerMiddleIn.AutoRoundedCorners = true;
-            this.tbCustomerMiddleIn.BorderRadius = 11;
+            this.tbCustomerMiddleIn.BorderRadius = 5;
             this.tbCustomerMiddleIn.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCustomerMiddleIn.DefaultText = "";
             this.tbCustomerMiddleIn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -310,31 +354,30 @@
             this.tbCustomerMiddleIn.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCustomerMiddleIn.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbCustomerMiddleIn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerMiddleIn.Location = new System.Drawing.Point(114, 125);
+            this.tbCustomerMiddleIn.Location = new System.Drawing.Point(102, 93);
             this.tbCustomerMiddleIn.Name = "tbCustomerMiddleIn";
             this.tbCustomerMiddleIn.PasswordChar = '\0';
             this.tbCustomerMiddleIn.PlaceholderText = "";
             this.tbCustomerMiddleIn.SelectedText = "";
             this.tbCustomerMiddleIn.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerMiddleIn.TabIndex = 44;
+            this.tbCustomerMiddleIn.TabIndex = 74;
             this.tbCustomerMiddleIn.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // label6
+            // label15
             // 
-            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(14, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 24);
-            this.label6.TabIndex = 43;
-            this.label6.Text = "Middle Initial:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label15.Location = new System.Drawing.Point(2, 93);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(94, 24);
+            this.label15.TabIndex = 73;
+            this.label15.Text = "Middle Initial:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbCustomerFirstName
             // 
             this.tbCustomerFirstName.Animated = true;
-            this.tbCustomerFirstName.AutoRoundedCorners = true;
-            this.tbCustomerFirstName.BorderRadius = 11;
+            this.tbCustomerFirstName.BorderRadius = 5;
             this.tbCustomerFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCustomerFirstName.DefaultText = "";
             this.tbCustomerFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -346,31 +389,30 @@
             this.tbCustomerFirstName.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCustomerFirstName.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbCustomerFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerFirstName.Location = new System.Drawing.Point(114, 95);
+            this.tbCustomerFirstName.Location = new System.Drawing.Point(102, 63);
             this.tbCustomerFirstName.Name = "tbCustomerFirstName";
             this.tbCustomerFirstName.PasswordChar = '\0';
             this.tbCustomerFirstName.PlaceholderText = "";
             this.tbCustomerFirstName.SelectedText = "";
             this.tbCustomerFirstName.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerFirstName.TabIndex = 42;
+            this.tbCustomerFirstName.TabIndex = 72;
             this.tbCustomerFirstName.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // label5
+            // label16
             // 
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(14, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 24);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "First Name:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label16.Location = new System.Drawing.Point(2, 63);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(94, 24);
+            this.label16.TabIndex = 71;
+            this.label16.Text = "First Name:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbCustomerLastName
             // 
             this.tbCustomerLastName.Animated = true;
-            this.tbCustomerLastName.AutoRoundedCorners = true;
-            this.tbCustomerLastName.BorderRadius = 11;
+            this.tbCustomerLastName.BorderRadius = 5;
             this.tbCustomerLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCustomerLastName.DefaultText = "";
             this.tbCustomerLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -382,31 +424,30 @@
             this.tbCustomerLastName.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCustomerLastName.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbCustomerLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerLastName.Location = new System.Drawing.Point(114, 65);
+            this.tbCustomerLastName.Location = new System.Drawing.Point(102, 33);
             this.tbCustomerLastName.Name = "tbCustomerLastName";
             this.tbCustomerLastName.PasswordChar = '\0';
             this.tbCustomerLastName.PlaceholderText = "";
             this.tbCustomerLastName.SelectedText = "";
             this.tbCustomerLastName.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerLastName.TabIndex = 40;
+            this.tbCustomerLastName.TabIndex = 70;
             this.tbCustomerLastName.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // label4
+            // label17
             // 
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(14, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 24);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Last Name:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label17.Location = new System.Drawing.Point(2, 33);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(94, 24);
+            this.label17.TabIndex = 69;
+            this.label17.Text = "Last Name:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbCustomerID
             // 
             this.tbCustomerID.Animated = true;
-            this.tbCustomerID.AutoRoundedCorners = true;
-            this.tbCustomerID.BorderRadius = 11;
+            this.tbCustomerID.BorderRadius = 5;
             this.tbCustomerID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCustomerID.DefaultText = "";
             this.tbCustomerID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -418,26 +459,26 @@
             this.tbCustomerID.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCustomerID.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbCustomerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbCustomerID.Location = new System.Drawing.Point(114, 35);
+            this.tbCustomerID.Location = new System.Drawing.Point(102, 3);
             this.tbCustomerID.Name = "tbCustomerID";
             this.tbCustomerID.PasswordChar = '\0';
             this.tbCustomerID.PlaceholderText = "";
             this.tbCustomerID.SelectedText = "";
             this.tbCustomerID.Size = new System.Drawing.Size(219, 24);
-            this.tbCustomerID.TabIndex = 38;
+            this.tbCustomerID.TabIndex = 68;
             this.tbCustomerID.TextOffset = new System.Drawing.Point(5, 0);
-            this.tbCustomerID.TextChanged += new System.EventHandler(this.tbCustomerID_TextChanged);
+            this.tbCustomerID.TextChanged += new System.EventHandler(this.TBTextChangeNumbersOnly);
             // 
-            // label9
+            // label18
             // 
-            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(14, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 24);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "ID:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.label18.Location = new System.Drawing.Point(2, 3);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(94, 24);
+            this.label18.TabIndex = 67;
+            this.label18.Text = "ID:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -488,8 +529,7 @@
             // tbSearchCustomer
             // 
             this.tbSearchCustomer.Animated = true;
-            this.tbSearchCustomer.AutoRoundedCorners = true;
-            this.tbSearchCustomer.BorderRadius = 11;
+            this.tbSearchCustomer.BorderRadius = 5;
             this.tbSearchCustomer.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbSearchCustomer.DefaultText = "";
             this.tbSearchCustomer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -498,10 +538,10 @@
             this.tbSearchCustomer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbSearchCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.tbSearchCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbSearchCustomer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearchCustomer.Font = new System.Drawing.Font("Arial", 9.75F);
             this.tbSearchCustomer.ForeColor = System.Drawing.Color.Gainsboro;
             this.tbSearchCustomer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.tbSearchCustomer.IconLeft = ((System.Drawing.Image)(resources.GetObject("tbSearchCustomer.IconLeft")));
+            this.tbSearchCustomer.IconLeft = global::Dollars.ImageRes.search;
             this.tbSearchCustomer.IconLeftSize = new System.Drawing.Size(15, 15);
             this.tbSearchCustomer.Location = new System.Drawing.Point(104, 25);
             this.tbSearchCustomer.Name = "tbSearchCustomer";
@@ -511,11 +551,12 @@
             this.tbSearchCustomer.SelectedText = "";
             this.tbSearchCustomer.Size = new System.Drawing.Size(406, 24);
             this.tbSearchCustomer.TabIndex = 9;
+            this.tbSearchCustomer.TextChanged += new System.EventHandler(this.OnSearchCustomer);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.label2.Location = new System.Drawing.Point(32, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 24);
@@ -527,34 +568,26 @@
             // 
             this.dgvCustomer.AllowUserToAddRows = false;
             this.dgvCustomer.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
-            this.dgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None;
             this.dgvCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
-            this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvColumnID,
-            this.dgvColumnName,
-            this.dgvColumnContact,
-            this.dgvColumnEmail,
-            this.dgvColumnPoints,
-            this.dgvColumnAmountSpent});
-            this.dgvCustomer.DataMember = " ";
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.dgvCustomer.Location = new System.Drawing.Point(12, 136);
             this.dgvCustomer.Name = "dgvCustomer";
@@ -580,10 +613,11 @@
             this.dgvCustomer.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.dgvCustomer.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvCustomer.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvCustomer.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvCustomer.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Gainsboro;
             this.dgvCustomer.ThemeStyle.RowsStyle.Height = 22;
             this.dgvCustomer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvCustomer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellClick);
             // 
             // panel1
             // 
@@ -597,43 +631,6 @@
             this.panel1.Size = new System.Drawing.Size(1000, 25);
             this.panel1.TabIndex = 16;
             // 
-            // dgvColumnID
-            // 
-            this.dgvColumnID.FillWeight = 30F;
-            this.dgvColumnID.HeaderText = "ID";
-            this.dgvColumnID.Name = "dgvColumnID";
-            this.dgvColumnID.ReadOnly = true;
-            // 
-            // dgvColumnName
-            // 
-            this.dgvColumnName.HeaderText = "Name";
-            this.dgvColumnName.Name = "dgvColumnName";
-            this.dgvColumnName.ReadOnly = true;
-            // 
-            // dgvColumnContact
-            // 
-            this.dgvColumnContact.HeaderText = "Contact No.";
-            this.dgvColumnContact.Name = "dgvColumnContact";
-            this.dgvColumnContact.ReadOnly = true;
-            // 
-            // dgvColumnEmail
-            // 
-            this.dgvColumnEmail.HeaderText = "Email";
-            this.dgvColumnEmail.Name = "dgvColumnEmail";
-            this.dgvColumnEmail.ReadOnly = true;
-            // 
-            // dgvColumnPoints
-            // 
-            this.dgvColumnPoints.HeaderText = "Points";
-            this.dgvColumnPoints.Name = "dgvColumnPoints";
-            this.dgvColumnPoints.ReadOnly = true;
-            // 
-            // dgvColumnAmountSpent
-            // 
-            this.dgvColumnAmountSpent.HeaderText = "Amount Spent";
-            this.dgvColumnAmountSpent.Name = "dgvColumnAmountSpent";
-            this.dgvColumnAmountSpent.ReadOnly = true;
-            // 
             // ManageCustomerForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -643,6 +640,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvCustomer);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -650,8 +648,10 @@
             this.Name = "ManageCustomerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ManageCustomerForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ManageCustomerForm_FormClosing);
             this.groupBox2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -660,19 +660,7 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerEmail;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerContactNo;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerMiddleIn;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerFirstName;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerLastName;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerID;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -680,18 +668,27 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCustomer;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerPoints;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox tbCustomerAmountSpent;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnContact;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnPoints;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvColumnAmountSpent;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerAmountSpent;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerPoints;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerEmail;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerContactNo;
+        private System.Windows.Forms.Label label14;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerMiddleIn;
+        private System.Windows.Forms.Label label15;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerFirstName;
+        private System.Windows.Forms.Label label16;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerLastName;
+        private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2TextBox tbCustomerID;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dpBirthdate;
     }
 }
