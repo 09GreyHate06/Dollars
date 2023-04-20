@@ -225,7 +225,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.label11.Location = new System.Drawing.Point(2, 243);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 24);
+            this.label11.Size = new System.Drawing.Size(103, 24);
             this.label11.TabIndex = 81;
             this.label11.Text = "Amount Spent:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
