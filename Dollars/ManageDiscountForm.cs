@@ -204,7 +204,11 @@ namespace Dollars
                 cbDiscountType.Text = discount.DiscountType.ToString();
                 tbDiscountValue.Text = Utils.DisplayCash(discount.Value);
                 cbDiscountApplyOn.Text = discount.ApplyDiscountOn.ToString();
-                tbDiscountMin.Text = Utils.DisplayCash(discount.Min);
+
+                if (discount.ApplyDiscountOn == Discount.ApplyOn.Product)
+                    tbDiscountMin.Text = discount.Min.ToString();
+                else
+                   tbDiscountMin.Text = Utils.DisplayCash(discount.Min);
 
                 if (discount.ApplyDiscountOn == Discount.ApplyOn.Product)
                     tbDiscountApplyOnPrd.Text = "Product #'" + DB.ProductsDB.Get(discount.ApplyOnID).Id.ToString() + "'";
