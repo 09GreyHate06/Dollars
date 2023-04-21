@@ -57,13 +57,19 @@ namespace Dollars
                 if (discount.ApplyAutomatically)
                     validity = discount.StartDate.ToString("d") + " -> " + discount.EndDate.ToString("d");
 
+                string min;
+                if (discount.ApplyDiscountOn == Discount.ApplyOn.Product)
+                    min = discount.Min.ToString() + " Units";
+                else
+                    min = Utils.DisplayCash(discount.Min);
+
                 m_dtDiscounts.Rows.Add(
                     discount.Id,
                     discount.Name,
                     discount.DiscountType.ToString(),
                     Utils.DisplayCash(discount.Value),
                     applyOnName,
-                    Utils.DisplayCash(discount.Min),
+                    min,
                     validity
                     );
             }

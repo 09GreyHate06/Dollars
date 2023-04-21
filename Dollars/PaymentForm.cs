@@ -153,7 +153,7 @@ namespace Dollars
             // w = 826.6; h = 1076.6;
 
             // invoice paper size
-            // w = 80mm
+            // w = 80mm = 302px
 
             PrinterSettings settings;
             PageSettings pageSettings;
