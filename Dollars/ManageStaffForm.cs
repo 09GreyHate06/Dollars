@@ -236,10 +236,12 @@ namespace Dollars
         {
             DataView dv = m_dtStaff.DefaultView;
 
+            string srch = int.TryParse(tbSearchStaff.Text, out _) ? "ID" : "Name";
+
             if (cbSearchStaffByRole.Text == "All")
-                dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchStaff.Text);
+                dv.RowFilter = string.Format(srch + " LIKE '%{0}%'", tbSearchStaff.Text);
             else
-                dv.RowFilter = string.Format("Name LIKE '%{0}%' AND Role LIKE '%{1}%'", tbSearchStaff.Text, cbSearchStaffByRole.Text);
+                dv.RowFilter = string.Format(srch + " LIKE '%{0}%' AND Role LIKE '%{1}%'", tbSearchStaff.Text, cbSearchStaffByRole.Text);
         }
 
         private void ManageStaffForm_FormClosing(object sender, FormClosingEventArgs e)

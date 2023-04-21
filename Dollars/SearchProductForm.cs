@@ -130,10 +130,12 @@ namespace Dollars
         {
             DataView dv = m_dtProducts.DefaultView;
 
+            string srch = int.TryParse(tbSearchPrd.Text, out _) ? "ID" : "Name";
+
             if (cbSearchPrdByCat.Text == "")
-                dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchPrd.Text);
+                dv.RowFilter = string.Format(srch + " LIKE '%{0}%'", tbSearchPrd.Text);
             else
-                dv.RowFilter = string.Format("Name LIKE '%{0}%' AND Category LIKE '%{1}%'", tbSearchPrd.Text, cbSearchPrdByCat.Text);
+                dv.RowFilter = string.Format(srch + " LIKE '%{0}%' AND Category LIKE '%{1}%'", tbSearchPrd.Text, cbSearchPrdByCat.Text);
 
             ShowProducts(dv.ToTable());
         }

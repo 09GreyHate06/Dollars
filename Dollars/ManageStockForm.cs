@@ -79,7 +79,11 @@ namespace Dollars
         private void OnSearchProduct(object sender, EventArgs e)
         {
             DataView dv = m_dtPrd.DefaultView;
-            dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchPrd.Text);
+
+            if (int.TryParse(tbSearchPrd.Text, out _))
+                dv.RowFilter = string.Format("ID LIKE '%{0}%'", tbSearchPrd.Text);
+            else
+                dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchPrd.Text);
         }
 
         private void btnAddStock_Click(object sender, EventArgs e)

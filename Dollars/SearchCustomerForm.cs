@@ -95,7 +95,12 @@ namespace Dollars
         private void OnSearchCustomer(object sender, EventArgs e)
         {
             DataView dv = m_dtCustomers.DefaultView;
-            dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchCustomer.Text);
+
+            if (int.TryParse(tbSearchCustomer.Text, out _))
+                dv.RowFilter = string.Format("ID LIKE '%{0}%'", tbSearchCustomer.Text);
+            else
+                dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchCustomer.Text);
+
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)

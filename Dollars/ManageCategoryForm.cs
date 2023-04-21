@@ -94,7 +94,11 @@ namespace Dollars
         private void OnSearchCategory(object sender, EventArgs e)
         {
             DataView dv = m_dtCategory.DefaultView;
-            dv.RowFilter = string.Format("Category LIKE '%{0}%'", tbSearchCat.Text);
+
+            if (int.TryParse(tbSearchCat.Text, out _))
+                dv.RowFilter = string.Format("ID LIKE '%{0}%'", tbSearchCat.Text);
+            else
+                dv.RowFilter = string.Format("Category LIKE '%{0}%'", tbSearchCat.Text);
         }
 
         private void btnSave_Click(object sender, EventArgs e)

@@ -147,10 +147,12 @@ namespace Dollars
         {
             DataView dv = m_dtDiscounts.DefaultView;
 
-            if(cbSearchDiscountByApplyOn.SelectedIndex == (int)Discount.ApplyOn.All)
-                dv.RowFilter = string.Format("Name LIKE '%{0}%'", tbSearchDiscount.Text);
+            string srch = int.TryParse(tbSearchDiscount.Text, out _) ? "ID" : "Name";
+
+            if (cbSearchDiscountByApplyOn.SelectedIndex == (int)Discount.ApplyOn.All)
+                dv.RowFilter = string.Format(srch + " LIKE '%{0}%'", tbSearchDiscount.Text);
             else
-                dv.RowFilter = string.Format("Name LIKE '%{0}%' AND [Apply On] LIKE '%{1}%'", 
+                dv.RowFilter = string.Format(srch + " LIKE '%{0}%' AND [Apply On] LIKE '%{1}%'", 
                     tbSearchDiscount.Text, ((Discount.ApplyOn)cbSearchDiscountByApplyOn.SelectedIndex).ToString());
 
             ShowDiscounts(dv.ToTable());
