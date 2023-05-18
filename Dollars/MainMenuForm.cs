@@ -12,6 +12,8 @@ namespace Dollars
 {
     public partial class MainMenuForm : Form, IChildForm
     {
+        private static readonly int s_criticalStockThreshold = 5;
+
         private bool m_windowDragging = false;
         private Point m_windowDragOffset;
 
@@ -149,7 +151,7 @@ namespace Dollars
             m_criticalStocks = new List<Product>();
             foreach(Product prd in DB.ProductsDB.Products)
             {
-                if (prd.Qty > 10) continue;
+                if (prd.Qty >= s_criticalStockThreshold) continue;
 
                 m_criticalStocks.Add(prd);
             }
