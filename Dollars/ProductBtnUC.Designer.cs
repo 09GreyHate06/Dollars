@@ -94,7 +94,7 @@
             this.btnProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnProduct.FillColor = System.Drawing.Color.White;
-            this.btnProduct.FocusedColor = System.Drawing.Color.Black;
+            this.btnProduct.FocusedColor = System.Drawing.Color.Transparent;
             this.btnProduct.Font = new System.Drawing.Font("Arial", 9F);
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = global::Dollars.ImageRes.default_image;
